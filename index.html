@@ -7,64 +7,71 @@
     <title>Formulario_Sena_V1</title>
 </head>
 <body>
+
+    <main>
         <h1>Formulario_Sena_V1</h1>
         <h2>Gracias por dejar sus datos</h2>
-        <div class=" contenedor"
-        <label for="name">NAME</label><br>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-        <br><br>
-        <label for="email">EMAIL</label><br>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        <br><br>   
-        <label for="Age">AGE</label><br>
-        <input type="number" id = "Age" name = "Age" placeholder="Enter your age" required">
-        <br><br>
-        <label for="option">CHOOSE AN OPTION</label><br>  
-        <select id="option" name="option" required>
-        <option value="">Select an option</option>
-        <option value="option1">Option 1</option>
-        <option value="option2">Option 2</option>
-        <option value="option3">Option 3</option>
-        </select> <BR></BR>
-        <label for="text">DO YOU PLAN TO BUY A NEW CAR IN THE NEXT 5 YEARS?</label>
-        <input class="Input" type="radio" name="option" id="option1" value="yes">yes<br>
-        <input class="Input" type="radio" name="option" id="option2" value="no">no<br>
-        <input class="Input" type="radio" name="option" id="option3" value="maybe">maybe<br>
-        <br>
-        <label for ="text">¿WHAT IS YOUR FAVORITE CAR BRAND?</label>
-        <select id="option" name="option" required>
-        <option value="">Select an option</option>
-        <option value="option1">Option 1</option>
-        <option value="option2">Option 2</option>
-        <option value="option3">Option 3</option>
-        </select><BR></BR>
-        <label for ="text">¿WHAT TYPE OF MEANS OF TRASNPORTATION DO YOU OWN?</label>
-        <input class="Inputt" type="checkbox" name="option" id="option1" >Car<br>
-        <input class="Inputt" type="checkbox" name="option" id="option2" >Boat<br>
-        <input class="Inputt" type="checkbox" name="option" id="option3" >Bicycle<br>
-        <input class="Inputt" type="checkbox" name="option" id="option4" >Motorcycle<br>
-        <input class="Inputt" type="checkbox" name="option" id="option5" >Plane<br>
-        <input class="Inputt" type="checkbox" name="option" id="option6" >Bike<br>
-        <input class="Inputt" type="checkbox" name="option" id="option7" >Bus<br>
-        <BR></BR>
-        <label for="text"> ¿ANY COMMENTS SUGGESTIONS?</label>
-        <input class="Comentario" type="text" id="comments" name="comments" placeholder="Please enter your comments">
-        <button class="Boton">Submite</button>
-        
-    </div>
-<script>
-const checkboxes = document.querySelectorAll('.Inputt[type="checkbox"]');
-checkboxes.forEach(cb => {
-    cb.addEventListener('change', function() {
-        const checked = document.querySelectorAll('.Inputt[type="checkbox"]:checked');
-        if (checked.length > 3) {
-            this.checked = false;
-            alert('Solo puedes seleccionar hasta 3 opciones.');
-        }
-    });
-});
-</script>
-    
+
+        <div class="contenedor">
+            <form id="survey-form" action="#" method="post">
+                <label for="name">NAME</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="Age">AGE</label>
+                <input type="number" id="Age" name="Age" placeholder="Enter your age" required>
+
+                <label for="option1">CHOOSE AN OPTION</label>
+                <select id="option1" name="chosenOption" required>
+                    <option value="">Select an option</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+
+                <label>DO YOU PLAN TO BUY A NEW CAR IN THE NEXT 5 YEARS?</label>
+                <input class="Input" type="radio" name="futureCar" id="optionYes" value="yes"> Yes<br>
+                <input class="Input" type="radio" name="futureCar" id="optionNo" value="no"> No<br>
+                <input class="Input" type="radio" name="futureCar" id="optionMaybe" value="maybe"> Maybe<br>
+
+                <label for="favoriteBrand">¿WHAT IS YOUR FAVORITE CAR BRAND?</label>
+                <select id="favoriteBrand" name="favoriteBrand" required>
+                    <option value="">Select an option</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+
+                <label>¿WHAT TYPE OF MEANS OF TRANSPORTATION DO YOU OWN?</label>
+                <input class="Inputt" type="checkbox" name="transportation" value="car"> Car<br>
+                <input class="Inputt" type="checkbox" name="transportation" value="boat"> Boat<br>
+                <input class="Inputt" type="checkbox" name="transportation" value="bicycle"> Bicycle<br>
+                <input class="Inputt" type="checkbox" name="transportation" value="motorcycle"> Motorcycle<br>
+                <input class="Inputt" type="checkbox" name="transportation" value="plane"> Plane<br>
+                <input class="Inputt" type="checkbox" name="transportation" value="bike"> Bike<br>
+                <input class="Inputt" type="checkbox" name="transportation" value="bus"> Bus<br>
+
+                <label for="comments">¿ANY COMMENTS OR SUGGESTIONS?</label>
+                <input class="Comentario" type="text" id="comments" name="comments" placeholder="Please enter your comments">
+
+                <button class="Boton" type="submit">Submit</button>
+            </form>
+
+
+            <!--BUTTON-->
+            <div id="modal-success" class="modal hidden">
+                <div id="modal-content">
+                    <h2>Datos Enviados Con Éxito!</h2>
+                    <button id="close-modal">Cerrar</button>
+                 </div>
+            </div>
+        </div>
+    </main>
+</body>
+    <script type="module" src="./Js/Javascripts.js"></script>
     
 </body>
+<footer>
 </html>
