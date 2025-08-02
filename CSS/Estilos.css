@@ -22,7 +22,7 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="number"] {
-    width: 100%;
+    width: 98%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #858585;
@@ -57,6 +57,8 @@ select {
 .Input[type="radio"]:checked {
     background: #4caf50;
 }
+
+
 .Inputt[type="checkbox"] {
     appearance: none;
     width: 15px;
@@ -65,12 +67,13 @@ select {
     background: #fff;
     vertical-align: middle;
     margin-right: 6px;
+    transform: rotate(50deg);
 }
 .Inputt[type="checkbox"]:checked {
     background: #4caf50;
 }
 .Comentario[type="text"] {
-    width: 99%;
+    width: 98%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #858585;
