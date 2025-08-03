@@ -1,11 +1,5 @@
 // main.js
-import { showModal, hideModal } from './Javascripts';
+// This file is currently redundant as the functionality is already implemented in Javascripts.js
+// Keeping it minimal to avoid duplicate event listeners
 
-document.getElementById("survey-form").addEventListener("submit", (event) => {
-    event.preventDefault();
-    showModal();
-});
-
-document.getElementById("close-modal").addEventListener("click", () => {
-    hideModal();
-});
+console.log('Main.js loaded - form functionality handled by Javascripts.js');
