@@ -27,7 +27,7 @@ input[type="number"] {
     margin-bottom: 15px;
     border: 1px solid #858585;
     border-radius: 4px;
-    background-color: rgb(200, 221, 400);
+    background-color: rgb(200, 221, 255);
 }
 .contenedor {
     max-width: 900px;
@@ -42,7 +42,7 @@ select {
     padding: 10px;
     border: 1px solid #858585;
     border-radius: 4px;
-    background-color: rgb(200, 221, 400);
+    background-color: rgb(200, 221, 255);
     margin-bottom: 15px;
 }
 .Input[type="radio"] {
@@ -55,9 +55,21 @@ select {
     margin-right: 6px;
 }
 .Input[type="radio"]:checked {
-    background: #4caf50;
+    background: #c7e214;
 }
+.Inputtt[type="radio"] {
+    appearance: none;
+    width: 15px;
+    height: 15px; 
+    border-radius: 4px;
+    background: #fff;   
+    transform: translate(60px)rotate(60deg);
+    
 
+}
+.Inputtt[type="radio"]:checked {
+    background: #ab7427;
+}
 
 .Inputt[type="checkbox"] {
     appearance: none;
@@ -131,7 +143,7 @@ select {
 #close-modal:hover {
     background-color: #c0392b;
 }
-
-.hidden {
+/*Aqui era el errorr */
+#modal-success.hidden {
     display: none;
 }
