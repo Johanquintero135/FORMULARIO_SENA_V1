@@ -27,7 +27,7 @@ input[type="number"] {
     margin-bottom: 15px;
     border: 1px solid #858585;
     border-radius: 4px;
-    background-color: rgb(200, 221, 400);
+    background-color: rgb(200, 221, 255);
 }
 .contenedor {
     max-width: 900px;
@@ -42,7 +42,7 @@ select {
     padding: 10px;
     border: 1px solid #858585;
     border-radius: 4px;
-    background-color: rgb(200, 221, 400);
+    background-color: rgb(200, 221, 255);
     margin-bottom: 15px;
 }
 .Input[type="radio"] {
