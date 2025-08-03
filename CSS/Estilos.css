@@ -27,7 +27,7 @@ input[type="number"] {
     margin-bottom: 15px;
     border: 1px solid #858585;
     border-radius: 4px;
-    background-color: rgb(200, 221, 400);
+    background-color: rgb(200, 221, 255);
 }
 .contenedor {
     max-width: 900px;
@@ -42,13 +42,14 @@ select {
     padding: 10px;
     border: 1px solid #858585;
     border-radius: 4px;
-    background-color: rgb(200, 221, 400);
+    background-color: rgb(200, 221, 255);
     margin-bottom: 15px;
 }
 .Input[type="radio"] {
     appearance: none;
     width: 15px;
     height: 15px;
+    border: 1px solid #858585;
     border-radius: 50%;
     background: #fff;
     vertical-align: middle;
@@ -63,11 +64,11 @@ select {
     appearance: none;
     width: 15px;
     height: 15px;
+    border: 1px solid #858585;
     border-radius: 4px;
     background: #fff;
     vertical-align: middle;
     margin-right: 6px;
-    transform: rotate(50deg);
 }
 .Inputt[type="checkbox"]:checked {
     background: #4caf50;
@@ -92,6 +93,11 @@ select {
     margin: 20px 0 0 0;
     display: block;
     margin-bottom: 10px;
+}
+
+.Boton:hover {
+    background-color: #5a6f5a;
+    transition: background-color 0.3s ease;
 }
 
 /* Estilo del contenedor del modal */
@@ -134,4 +140,21 @@ select {
 
 .hidden {
     display: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 50px;
+    }
+    
+    .contenedor {
+        padding: 20px 15px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
 }
